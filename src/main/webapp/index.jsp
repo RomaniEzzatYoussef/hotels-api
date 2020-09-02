@@ -13,13 +13,19 @@
 
 <h3>Browsing App</h3>
 <hr>
-<a href="${pageContext.request.contextPath}/auth/usersTypes">Get Users Types</a><br>
-<a href="${pageContext.request.contextPath}/auth/users">Get Users</a><br>
-<a href="${pageContext.request.contextPath}/auth/categoryType">Get Category Types</a><br>
-<a href="${pageContext.request.contextPath}/auth/categoryType/1">Get Categories By Category Types</a><br>
-<a href="${pageContext.request.contextPath}/auth/category">Get Categories</a><br>
-<a href="${pageContext.request.contextPath}/auth/categoryService">Get Category Services</a><br>
-<a href="${pageContext.request.contextPath}/auth/service">Get Services</a><br>
+<a href="${pageContext.request.contextPath}/auth/user/current">Get Current User</a><br>
+<a href="${pageContext.request.contextPath}/auth/user/1">Get User By ID</a><br>
+<a href="${pageContext.request.contextPath}/auth/usersTypes">Get All Users Types</a><br>
+<a href="${pageContext.request.contextPath}/auth/users">Get All Users</a><br>
+<a href="${pageContext.request.contextPath}/auth/categoryTypes">Get All Category Types</a><br>
+<a href="${pageContext.request.contextPath}/auth/categoryType/1/categories">Get Categories By Category Type</a><br>
+<a href="${pageContext.request.contextPath}/auth/category/1">Get Category By ID</a><br>
+<a href="${pageContext.request.contextPath}/auth/category/1/categoryServices">Get Category Services By Category ID</a><br>
+<a href="${pageContext.request.contextPath}/auth/categories">Get All Categories</a><br>
+<a href="${pageContext.request.contextPath}/auth/categoryService/1">Get Category Service By ID</a><br>
+<a href="${pageContext.request.contextPath}/auth/categoryServices">Get All Category Services</a><br>
+<a href="${pageContext.request.contextPath}/auth/services">Get All Services</a><br>
+<a href="${pageContext.request.contextPath}/auth/categoryService/1/services">Get Services By Category Service ID</a><br>
 <hr>
 
 </body>

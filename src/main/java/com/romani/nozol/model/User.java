@@ -19,6 +19,11 @@ public class User {
     @JsonIgnoreProperties("users")
     private UserType userType;
 
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @JoinColumn(name = "image_id")
+    @JsonIgnoreProperties("users")
+    private Image image;
+
     @Column(name = "name")
     private String name;
 
@@ -45,7 +50,6 @@ public class User {
 
     public User() {
     }
-
 
     public int getId() {
         return id;
@@ -125,5 +129,13 @@ public class User {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
     }
 }
